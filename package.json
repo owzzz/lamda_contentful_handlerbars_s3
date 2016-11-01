@@ -1,0 +1,30 @@
+{
+  "name": "lambda_contentful_handlerbars_s3",
+  "version": "1.0.0",
+  "description": "An AWS Lambda bootstrap static site generator using Contentful and Amazon S3",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path ./src/scss scss/main.scss ./dist/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owzzz/lamda_contentful_handlerbars_s3.git"
+  },
+  "author": "Owain Llewellyn <owain.llew@gmail.com> (http://owzzz.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owzzz/lamda_contentful_handlerbars_s3/issues"
+  },
+  "homepage": "https://github.com/owzzz/lamda_contentful_handlerbars_s3#readme",
+  "devDependencies": {
+    "node-sass": "^3.10.1",
+    "nodemon": "^1.11.0",
+    "serverless-offline": "^3.2.1",
+    "serverless-runtime-babel": "0.0.6"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0",
+    "contentful": "^3.7.0"
+  }
+}
